@@ -1,0 +1,16 @@
+:root {
+  --gold:    #B8860B;
+  --silver:  #C0C0C0;
+  --bg:      #0F0F0F;
+  --surface: #171717;
+  --text:    #E8E4D8;
+  --muted:   #666055;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); }
+
+/* Reveal animations */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
