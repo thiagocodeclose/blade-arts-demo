@@ -4,6 +4,7 @@ import { Cinzel, Lato } from 'next/font/google';
 import './globals.css';
 import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 
+import { KorivaLivePreview } from '@/components/KorivaLivePreview';
 const cinzel = Cinzel({ subsets: ['latin'], weight: ['400', '700', '900'], variable: '--font-heading' });
 const lato   = Lato({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-body' });
 
@@ -17,7 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" className={`${cinzel.variable} ${lato.variable}`} style={vars as React.CSSProperties}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">{children}<KorivaLivePreview /></body>
     </html>
   );
 }
