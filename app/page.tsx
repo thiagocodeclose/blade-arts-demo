@@ -96,7 +96,7 @@ function Hero() {
             <span className="text-bl-gold font-body font-bold text-xs uppercase tracking-[0.3em]">Seattle's Premier Weapons Arts Academy</span>
           </div>
 
-          <h1 className="font-heading text-6xl sm:text-8xl lg:text-9xl text-white leading-none mb-6">
+          <h1 data-cg-el="hero_headline_1" className="font-heading text-6xl sm:text-8xl lg:text-9xl text-white leading-none mb-6">
             MASTER<br />
             THE ART<br />
             <span className="text-bl-gold">OF STEEL</span>
