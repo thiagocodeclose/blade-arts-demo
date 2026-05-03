@@ -93,7 +93,7 @@ function Hero() {
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 border border-bl-gold/40 px-4 py-1.5 mb-8">
             <div className="w-1.5 h-1.5 bg-bl-gold rounded-full" />
-            <span className="text-bl-gold font-body font-bold text-xs uppercase tracking-[0.3em]">Seattle's Premier Weapons Arts Academy</span>
+            <span data-cg-el="hero_eyebrow" className="text-bl-gold font-body font-bold text-xs uppercase tracking-[0.3em]">Seattle's Premier Weapons Arts Academy</span>
           </div>
 
           <h1 data-cg-el="hero_headline_1" className="font-heading text-6xl sm:text-8xl lg:text-9xl text-white leading-none mb-6">
@@ -102,14 +102,14 @@ function Hero() {
             <span className="text-bl-gold">OF STEEL</span>
           </h1>
 
-          <p className="text-bl-muted text-lg mb-3 font-body font-bold uppercase tracking-widest">Foil · Sabre · Épée · Kendo · Iaido</p>
+          <p data-cg-el="hero_subtitle" className="text-bl-muted text-lg mb-3 font-body font-bold uppercase tracking-widest">Foil · Sabre · Épée · Kendo · Iaido</p>
           <p className="text-[#888] leading-relaxed mb-8 max-w-lg font-body">{studioInfo.subheadline}</p>
 
           <div className="flex flex-wrap gap-3">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-bl-gold hover:bg-[#9a7009] text-white font-body font-bold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
+            <a data-cg-el="hero_cta_primary" href="#contact" className="inline-flex items-center gap-2 bg-bl-gold hover:bg-[#9a7009] text-white font-body font-bold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
               Free Trial Class <ArrowRight size={15} />
             </a>
-            <a href="#disciplines" className="inline-flex items-center gap-2 border border-[#333] hover:border-bl-gold text-bl-text font-body font-bold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
+            <a data-cg-el="hero_cta_secondary" href="#disciplines" className="inline-flex items-center gap-2 border border-[#333] hover:border-bl-gold text-bl-text font-body font-bold text-sm uppercase tracking-widest px-8 py-4 transition-colors">
               Disciplines
             </a>
           </div>
