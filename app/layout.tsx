@@ -2,9 +2,9 @@
 import type { Metadata } from 'next';
 import { Cinzel, Lato } from 'next/font/google';
 import './globals.css';
-import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
+import { getGarrison365Config, buildCssVars } from '@/lib/garrison365-config';
 
-import { KorivaLivePreview } from '@/components/KorivaLivePreview';
+import { Garrison365LivePreview } from '@/components/Garrison365LivePreview';
 const cinzel = Cinzel({ subsets: ['latin'], weight: ['400', '700', '900'], variable: '--font-heading' });
 const lato   = Lato({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-body' });
 
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const cfg = await getKorivaConfig();
+  const cfg = await getGarrison365Config();
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" className={`${cinzel.variable} ${lato.variable}`} style={vars as React.CSSProperties}>
-      <body className="antialiased">{children}<KorivaLivePreview /></body>
+      <body className="antialiased">{children}<Garrison365LivePreview /></body>
     </html>
   );
 }

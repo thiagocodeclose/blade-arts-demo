@@ -383,7 +383,7 @@ function Footer() {
             <Facebook size={14} className="text-bl-muted" />
           </a>
         </div>
-        <p className="text-[#444] text-xs font-body">Powered by <span className="text-bl-gold">Koriva Sites</span></p>
+        <p className="text-[#444] text-xs font-body">Powered by <span className="text-bl-gold">Garrison365 Sites</span></p>
       </div>
     </footer>
   );
